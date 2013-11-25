@@ -44,7 +44,7 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 		// AdMob mediation UI상에 입력한 값이 serverParameter 인자로 전달됨.
 		// 전면형 광고 클라이언트 ID를 설정
 		// Adam의 경우, Adam 승인 이전에는 "InterstitialTestClientId"를 지정해야 테스트가 가능.
-		mAdInterstitial.setClientId("InterstitialTestClientId");
+		mAdInterstitial.setClientId(serverParameter);
 
 		// 전면형 광고를 정상적으로 내려받았을 경우에 실행할 리스너
 		mAdInterstitial.setOnAdLoadedListener(this);
@@ -56,12 +56,7 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 		mAdInterstitial.setOnAdClosedListener(this);
 
 		// 전면광고를 호출하고 게재함.
-		// AdMob custom event 구현상 보여주는 것은 전면광고 요청이 성공했을 때 진행하도록 되어 있으나 Adam SDK가
-		// 호출과 노출을 하나로 처리하고 있어서 예외적으로 구현함.
-		// failure 테스트
-		
-			// 광고 요청과 동시에 add된 광고 view를 제거함
-			mAdInterstitial.loadAd();
+		mAdInterstitial.loadAd();
 		
 
 	}

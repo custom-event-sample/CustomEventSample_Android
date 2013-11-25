@@ -80,7 +80,7 @@ public class CustomEventCaulyInterstitial implements CustomEventInterstitial,
 	public void onClosedInterstitialAd(CaulyInterstitialAd ad) {
 
 		Log.d(LOGTAG, "interstitial AD closed.");
-		 // AdMob custom event에 전면광고가 닫힘을 알림
+		// AdMob custom event에 전면광고가 닫힘을 알림
 		this.interstitialListener.onDismissScreen();
 
 	}
