@@ -82,7 +82,9 @@ public class CustomEventAdam implements CustomEventBanner,OnAdWillLoadListener,O
 
 	@Override
 	public void destroy() {
-
+		 if (this.adView != null) {
+		      this.adView.destroy();
+		    }
 	}
 	
 	@Override
