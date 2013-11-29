@@ -109,7 +109,9 @@ public class CustomEventCauly implements CustomEventBanner, CaulyAdViewListener 
 
 	@Override
 	public void destroy() {
-
+		 if (this.adView != null) {
+		      this.adView.destroy();
+		    }
 	}
 
 }
