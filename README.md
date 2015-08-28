@@ -19,10 +19,10 @@ Samples
 AdFit(Ad@m)
 ----------
 * [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/BannerExample)
-* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/InterstitalExample)
+* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/InterstitialExample)
 
 Cauly
 -----
 * [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/Cauly/BannerExample)
-* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/Cauly/InterstitalExample)
+* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/Cauly/InterstitialExample)
 
