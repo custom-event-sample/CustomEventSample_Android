@@ -18,7 +18,7 @@ Samples
 
 AdFit(Ad@m)
 ----------
-* [Banner]()
+* [Banner](CustomEventSample_Android/AdFit/BannerExample)
 * [Interstitial]()
 
 Cauly
