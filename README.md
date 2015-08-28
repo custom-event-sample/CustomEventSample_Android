@@ -19,7 +19,7 @@ Samples
 AdFit(Ad@m)
 ----------
 * [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/BannerExample)
-* [Interstitial]()
+* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/InterstitalExample)
 
 Cauly
 -----
