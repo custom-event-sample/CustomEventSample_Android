@@ -1,17 +1,20 @@
-package com.customevent.example;
+package cauly.example.com.caulyinterstitial;
 
 
 //Cauly 전면광고 헤더
 //Cauly 웹사이트에서 전면광고 구현 가이드를 참고하여 파일 등을 프로젝트에 추가하여야 함
-import com.fsn.cauly.*;
-
 import android.app.Activity;
 import android.util.Log;
-import com.google.ads.mediation.MediationAdRequest;
 
-//AdMob 전면광고 Custom Event 구현 헤더
+import com.fsn.cauly.CaulyAdInfo;
+import com.fsn.cauly.CaulyAdInfoBuilder;
+import com.fsn.cauly.CaulyInterstitialAd;
+import com.fsn.cauly.CaulyInterstitialAdListener;
+import com.google.ads.mediation.MediationAdRequest;
 import com.google.ads.mediation.customevent.CustomEventInterstitial;
 import com.google.ads.mediation.customevent.CustomEventInterstitialListener;
+
+//AdMob 전면광고 Custom Event 구현 헤더
 
 public class CustomEventCaulyInterstitial implements CustomEventInterstitial,
     CaulyInterstitialAdListener {
@@ -35,7 +38,7 @@ public class CustomEventCaulyInterstitial implements CustomEventInterstitial,
         this.InterstitialActivity = activity;
 
         // CaulyAdInfo 생성
-        // AdMob mediation UI상에 입력한 값이 serverParameter 인자로 전달됨
+        // AdMob mediation UI상에 입력한 값이 serverParameter (cauly 'App_Code') 인자로 전달됨
         CaulyAdInfo adInfo = new CaulyAdInfoBuilder(serverParameter).build();
 
         // Cauly 전면 광고 생성
@@ -57,10 +60,13 @@ public class CustomEventCaulyInterstitial implements CustomEventInterstitial,
         } else {
             Log.d(LOGTAG, "normal interstitial AD received.");
         }
-        // Cauly 전면 광고 노출. show()를 호출하지 않으면 전면광고가 보여지지 않음
-        //ad.show();
+        System.out.println("광고객체저장");
+
+        //바로 .show()를 호출하지말고 Ad객체를 저장
+        interstial = ad;
 
         // AdMob custom event에 전면광고가 성공했음을 알림
+        // showInterstitial 호출
         this.interstitialListener.onReceivedAd();
 
     }
@@ -70,6 +76,7 @@ public class CustomEventCaulyInterstitial implements CustomEventInterstitial,
     public void onFailedToReceiveInterstitialAd(CaulyInterstitialAd ad,
                                                 int errorCode, String errorMsg) {
         Log.d(LOGTAG, "failed to receive interstitial AD.");
+        Log.d(LOGTAG, String.valueOf(errorCode));
         this.interstitialListener.onFailedToReceiveAd();
 
     }

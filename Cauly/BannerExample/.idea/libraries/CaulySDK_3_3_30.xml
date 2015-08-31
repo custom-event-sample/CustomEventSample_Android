@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CaulySDK-3.3.30">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/CaulySDK-3.3.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
