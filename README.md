@@ -10,13 +10,13 @@ This is an example implementation for a mediation adapter which is necessary for
 
 Prerequisites
 =============
-* AdMob과 연동된 app.
-* 카울리 .lib & 안드로이드 API 7이상.  
-* 애드핏 .lib & 안드로이드 API 9이상. 
+* AdMob과 연동된 app
+* 카울리 lib, 안드로이드 API 7이상 
+* 애드핏 lib, 안드로이드 API 9이상 
 
-* Integrated AdMob with app.
-* Cauly lib file, Android API level higher than 7.
-* AdFit lib file, Android API level higher than 9.
+* Integrated AdMob with app
+* Cauly lib, Android API level higher than 7
+* AdFit lib, Android API level higher than 9
 
 Samples
 =======
