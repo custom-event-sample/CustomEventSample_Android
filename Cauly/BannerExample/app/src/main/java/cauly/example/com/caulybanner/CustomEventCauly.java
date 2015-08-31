@@ -1,16 +1,15 @@
-package com.customevent.example;
+package cauly.example.com.caulybanner;
 
 //Cauly 전면광고 헤더
 //Cauly 웹사이트에서 전면광고 구현 가이드를 참고하여 파일 등을 프로젝트에 추가하여야 함
+import android.app.Activity;
+import android.util.Log;
+import android.widget.LinearLayout;
+
 import com.fsn.cauly.CaulyAdInfo;
 import com.fsn.cauly.CaulyAdInfoBuilder;
 import com.fsn.cauly.CaulyAdView;
 import com.fsn.cauly.CaulyAdViewListener;
-
-import com.customevent.example.R;
-import android.app.Activity;
-import android.util.Log;
-import android.widget.LinearLayout;
 import com.google.ads.AdSize;
 import com.google.ads.mediation.MediationAdRequest;
 import com.google.ads.mediation.customevent.CustomEventBanner;
@@ -37,12 +36,11 @@ public class CustomEventCauly implements CustomEventBanner, CaulyAdViewListener 
 		this.bannerListener = listener;
 		this.bannerActivity = activity;
 
-		// android:id="@+id/relativelayout" 속성이
-		// 지정된 것으로 가정하여 Relativelayout 찾기
+		//AdView의 parent layout
 		layout = (LinearLayout) activity.findViewById(R.id.layout);
 
 		// 광고 정보 설정
-		// AdMob mediation UI상에 입력한 값이 serverParameter 인자로 전달됨
+		// AdMob mediation UI상에 입력한 값이 serverParameter(AdMob에서의 App_code) 인자로 전달됨
 		CaulyAdInfo adInfo = new CaulyAdInfoBuilder(serverParameter).effect(
 				"RightSlide").build();
 

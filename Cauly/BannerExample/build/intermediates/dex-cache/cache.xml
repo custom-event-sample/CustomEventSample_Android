@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/minjis/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-7eb1aeeeebcd2cc4319301f9f47bc25cbc00789d.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-ddea616a5d48373c3c274f6e3f321c099d03455b.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-415db7e21988ec9a6b735e481301f7ee4aaa261c.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-aa9d31ee6673fa164446cd6283d105ab701cb51b.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-671aeeb0879e9ee98e691bc42669b27885ab9284.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-01022f76988fc206cee6f0e7507e18ec8216db29.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-6812e8aed60f68a1f4540647f0e1d4eaf0d6984b.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-fd05bc1934d06188cc8e62d69bae1e978027fa8d.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-46c10a55fdbf75f478f7d820f5d77e5b12bfd9eb.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-31f60ead698a2e3b49f8cc3d21962cecdcd1566b.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-4f6472ae86d7f1ff0f2ffd91490923d7d0bd22ba.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-41b58f87b56c19b0f41135924e64dfda06bfc2dd.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-89975a94f933424986f0d765e000d27da7998c85.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-8e389c25763fa069e3948d506953c8cf36030ade.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-074d557d6d1ccad19dcd7c0425c9ba1930bfad4b.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-df21a27a475e9e72c37830b7632620fafb75f543.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-f2126597766c83f357e15e07a669f8c946e26426.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-13c5314a2da1cf027b8c5db53cbd168983cdae14.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/libs/CaulySDK-3.3.30.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2bcdecdddf0746ce972e014171fbba639192f702">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/CaulySDK-3.3.30-a44d8d775b45e1a2c0db048299c2e332b660d965.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-532c6417373ada13369267d3a07e33529c9cb14e.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-819703c6ac603cf9ce8b8d6dc2e3e92559b73927.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-e7f7f143d346c0d1eac2084aaf0720016b423222.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-2da17bd363147a65eef33c57ba8d4ca705f89252.jar" />
+    </item>
+    <item
+        jar="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/minjis/AndroidStudioProjects/CaulyBanner/app/build/intermediates/pre-dexed/debug/classes-1976a7a8d3d621b31b368f5cea4805695e26d089.jar" />
+    </item>
+
+</items>
