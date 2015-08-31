@@ -11,12 +11,14 @@ This is an example implementation for a mediation adapter which is necessary for
 Prerequisites
 =============
 * AdMob과 연동된 app
+* compile 'com.google.android.gms:play-services:7.0.0'
 * 카울리 SDK (ver - 3.3.30), 안드로이드 API 7이상 
 * 애드핏 SDK (ver - 2.3.4), 안드로이드 API 9이상 
 
 -----------------
 
 * Integrated AdMob with app
+* compile 'com.google.android.gms:play-services:7.0.0'
 * Cauly SDK(ver - 3.3.30), Android API level higher than 7
 * AdFit SDK(ver - 2.3.4), Android API level higher than 9
 
