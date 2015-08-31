@@ -11,8 +11,8 @@ This is an example implementation for a mediation adapter which is necessary for
 Prerequisites
 =============
 * AdMob과 연동된 app
-* 카울리 SDK(ver - 3.3.30), 안드로이드 API 7이상 
-* 애드핏 SDK(ver - 2.3.4), 안드로이드 API 9이상 
+* 카울리 SDK (ver - 3.3.30), 안드로이드 API 7이상 
+* 애드핏 SDK (ver - 2.3.4), 안드로이드 API 9이상 
 
 -----------------
 
