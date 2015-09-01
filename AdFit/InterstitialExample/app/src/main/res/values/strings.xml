@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdFitInterstitial</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--mediation netwotk들이 추가된 ad_unit_id로 수정하세요. -->
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>
