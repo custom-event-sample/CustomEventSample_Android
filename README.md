@@ -32,11 +32,11 @@ mediation network를 설정하신 Ad Unit Id로 변경하여 사용해 주시기
 
 AdFit(Ad@m)
 ----------
-* [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/BannerExample)
-* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/InterstitialExample)
+* [Banner](https://github.com/custom-event-sample/CustomEventSample_Android/tree/master/AdFit/BannerExample)
+* [Interstitial](https://github.com/custom-event-sample/CustomEventSample_Android/tree/master/AdFit/InterstitialExample)
 
 Cauly
 -----
-* [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/Cauly/BannerExample)
-* [Interstitial](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/Cauly/InterstitialExample)
+* [Banner](https://github.com/custom-event-sample/CustomEventSample_Android/tree/master/Cauly/BannerExample)
+* [Interstitial](https://github.com/custom-event-sample/CustomEventSample_Android/tree/master/Cauly/InterstitialExample)
 
