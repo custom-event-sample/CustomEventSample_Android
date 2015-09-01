@@ -13,11 +13,15 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private InterstitialAd mInterstitialAd;
     private CountDownTimer mCountDownTimer;
     private Button mShowButton;
+
+    //어느 네트워크에서 오는지 확인 (Flag 변수)
+    public static String networknName = "default";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,14 +109,23 @@ public class MainActivity extends AppCompatActivity {
         mCountDownTimer.start();
     }
 
-
+    //Retry 버튼이 눌림
     private void showInterstitial() {
-        // 광고가 준비 되었으면 광고를 보여주고, 없으면 광고없이 게임 다시 시작.
-        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
 
+        //AdFit network가 선택되었으면
+        if(networknName=="AdFit")
+        {
+            //AdFit Reqeust 보냄.
+            CustomEventAdamInterstitial.mAdInterstitial.loadAd();
+        }
+        else {
+
+            // 광고가 준비 되었으면 광고를 보여주고, 없으면 광고없이 게임 다시 시작.
+            if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

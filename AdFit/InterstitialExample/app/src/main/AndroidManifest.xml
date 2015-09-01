@@ -25,6 +25,13 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
 
+        <activity
+            android:name="net.daum.adam.publisher.impl.AdInterstitialActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+
+        </activity>
+
     </application>
 
 </manifest>
