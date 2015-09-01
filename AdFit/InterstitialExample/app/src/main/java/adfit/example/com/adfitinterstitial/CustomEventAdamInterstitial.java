@@ -1,20 +1,21 @@
-package com.customevent.example;
+package adfit.example.com.adfitinterstitial;
 
 // Adam 전면광고 라이브러리  
 // Adam 웹사이트에서 전면광고 구현 가이드를 참고하여 파일 등을 프로젝트에 추가하여야 함
+import android.app.Activity;
+import android.util.Log;
+
+import com.google.ads.mediation.MediationAdRequest;
+import com.google.ads.mediation.customevent.CustomEventInterstitial;
+import com.google.ads.mediation.customevent.CustomEventInterstitialListener;
+
 import net.daum.adam.publisher.AdInterstitial;
 import net.daum.adam.publisher.AdView.OnAdClosedListener;
 import net.daum.adam.publisher.AdView.OnAdFailedListener;
 import net.daum.adam.publisher.AdView.OnAdLoadedListener;
 import net.daum.adam.publisher.impl.AdError;
 
-import android.app.Activity;
-import android.util.Log;
-import com.google.ads.mediation.MediationAdRequest;
-
-//AdMob 전면광고 Custom Event 구현 라이브러리  
-import com.google.ads.mediation.customevent.CustomEventInterstitial;
-import com.google.ads.mediation.customevent.CustomEventInterstitialListener;
+//AdMob 전면광고 Custom Event 구현 라이브러리
 
 
 public class CustomEventAdamInterstitial implements CustomEventInterstitial,

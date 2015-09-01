@@ -1,7 +1,16 @@
-package com.customevent.example;
+package adfit.example.com.adfitbanner;
 
 //Ad@m 전면광고 라이브러리  
 //Ad@m 웹사이트에서 전면광고 구현 가이드를 참고하여 파일 등을 프로젝트에 추가하여야 함
+import android.app.Activity;
+import android.util.Log;
+import android.widget.LinearLayout;
+
+import com.google.ads.AdSize;
+import com.google.ads.mediation.MediationAdRequest;
+import com.google.ads.mediation.customevent.CustomEventBanner;
+import com.google.ads.mediation.customevent.CustomEventBannerListener;
+
 import net.daum.adam.publisher.AdView.AnimationType;
 import net.daum.adam.publisher.AdView.OnAdClickedListener;
 import net.daum.adam.publisher.AdView.OnAdFailedListener;
@@ -9,17 +18,7 @@ import net.daum.adam.publisher.AdView.OnAdLoadedListener;
 import net.daum.adam.publisher.AdView.OnAdWillLoadListener;
 import net.daum.adam.publisher.impl.AdError;
 
-import android.app.Activity;
-import android.util.Log;
-import android.widget.LinearLayout;
-
-import com.customevent.example.R;
-import com.google.ads.AdSize;
-import com.google.ads.mediation.MediationAdRequest;
-
-//AdMob 배너광고 Custom Event 구현 라이브러리 
-import com.google.ads.mediation.customevent.CustomEventBanner;
-import com.google.ads.mediation.customevent.CustomEventBannerListener;
+//AdMob 배너광고 Custom Event 구현 라이브러리
 
 
 public class CustomEventAdam implements CustomEventBanner,OnAdWillLoadListener,OnAdLoadedListener,OnAdFailedListener,OnAdClickedListener {
@@ -51,8 +50,7 @@ public class CustomEventAdam implements CustomEventBanner,OnAdWillLoadListener,O
 			return;
 		}
 
-		// android:id="@+id/relativelayout" 속성이
-		// 지정된 것으로 가정하여 Linearlayout 찾기
+		//AdView의 parent layout
 		layout = (LinearLayout) activity.findViewById(R.id.layout);
 
 		// Ad@m 배너 광고 view생성
@@ -70,7 +68,7 @@ public class CustomEventAdam implements CustomEventBanner,OnAdWillLoadListener,O
 
 		
 		// AdMob mediation UI상에 입력한 값이 serverParameter 인자로 전달
-		// 할당 받은 clientId 설정
+		// severParameter = AdFit에서 할당 받은 clientId 설정
 		this.adView.setClientId(serverParameter);
 		// 광고 갱신 주기를 120초로 설정
 		this.adView.setRequestInterval(120);
@@ -106,15 +104,14 @@ public class CustomEventAdam implements CustomEventBanner,OnAdWillLoadListener,O
 	
 	@Override
 	public void OnAdLoaded() {
-		
-			// 광고 요청과 동시에 add된 광고 view를 제거함
-			layout.removeView(adView);
-		
-			// 광고 view를 AdMob mediation으로 전달
-			bannerListener.onReceivedAd(adView);
 
-			Log.i(LOGTAG, "광고가 정상적으로 로딩되었습니다.");
-		
+		// 광고 요청과 동시에 add된 광고 view를 제거함
+		layout.removeView(adView);
+
+		// 광고 view를 AdMob mediation으로 전달
+		bannerListener.onReceivedAd(adView);
+
+		Log.i(LOGTAG, "광고가 정상적으로 로딩되었습니다.");
 	}
 	
 	@Override
