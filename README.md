@@ -27,6 +27,9 @@ Prerequisites
 Samples
 =======
 
+value > string.xml 안에 설정된 ad_unit_id는 AdMob에서 제공하는 test id 입니다.
+mediation network를 설정하신 Ad Unit Id로 변경하여 사용해 주시기 바랍니다. 
+
 AdFit(Ad@m)
 ----------
 * [Banner](https://github.com/minjisong7334/CustomEventSample_Android/tree/master/AdFit/BannerExample)
