@@ -23,7 +23,7 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 
 	private static final String LOGTAG = "Ad@mInterstitial_LOG";
 
-	public static AdInterstitial mAdInterstitial;
+	public AdInterstitial mAdInterstitial;
 	private CustomEventInterstitialListener interstitialListener;
 	private Activity InterstitialActivity;
 
@@ -56,9 +56,11 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 		// 전면형 광고를 닫을 시에 실행할 리스너
 		mAdInterstitial.setOnAdClosedListener(this);
 
-		//AdFit network가 선택됨
-		MainActivity.networknName = "AdFit";
-		System.out.println(MainActivity.networknName);
+		//광고를 받는것과 보여주는 메소드가 하나로 이루어지기 때문에
+		//광고를 받았다고 일단 알려줌
+		interstitialListener.onReceivedAd();
+
+
 
 	}
 
@@ -69,6 +71,10 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 
 	@Override
 	public void showInterstitial() {
+
+		//AdMob InterstitialAd.show(); 호출시 호출됨
+		//여기서 reuqest보내기
+		mAdInterstitial.loadAd();
 
 		Log.i(LOGTAG, "Ad@m showInterstitial");
 
@@ -83,7 +89,6 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 		Log.i(LOGTAG, "adam Interstitial - OnAdLoaded");
 
 		// AdMob custom event에 전면광고가 성공했음을 알림
-		interstitialListener.onReceivedAd();
 
 	}
 
