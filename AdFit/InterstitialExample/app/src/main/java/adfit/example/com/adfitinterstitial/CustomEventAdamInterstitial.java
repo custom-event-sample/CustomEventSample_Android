@@ -44,7 +44,6 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 
 		// AdMob mediation UI상에 입력한 값이 serverParameter 인자로 전달됨.
 		// 전면형 광고 클라이언트 ID를 설정
-		// Adam의 경우, Adam 승인 이전에는 "InterstitialTestClientId"를 지정해야 테스트가 가능.
 		mAdInterstitial.setClientId(serverParameter);
 
 		// 전면형 광고를 정상적으로 내려받았을 경우에 실행할 리스너
@@ -56,11 +55,13 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 		// 전면형 광고를 닫을 시에 실행할 리스너
 		mAdInterstitial.setOnAdClosedListener(this);
 
-		//광고를 받는것과 보여주는 메소드가 하나로 이루어지기 때문에
-		//광고를 받았다고 일단 알려줌
+		// AdFit은 광고 요청과 동시에 광고를 보여주기 때문에,
+		// 'Retry' 버튼이 눌렸을 때, 광고가 보여져야 하는 시점에서 광고요청 하도록 구현.
+
+		// 광고를 받았다고 셋팅함.
+		// AdMob의 InterstitialAd 객체가 광고를 받은 것으로 인지함.
+		// mInterstitialAd.isLoaded() 호출시 true를 반환하게됨.
 		interstitialListener.onReceivedAd();
-
-
 
 	}
 
@@ -73,14 +74,10 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 	public void showInterstitial() {
 
 		//AdMob InterstitialAd.show(); 호출시 호출됨
-		//여기서 reuqest보내기
+		//여기서 실제 AdFit reuqest보내기
 		mAdInterstitial.loadAd();
 
 		Log.i(LOGTAG, "Ad@m showInterstitial");
-
-		// Ad@m은 광고 호출과 게재가 loadAd()메소드로 함께 진행되므로 로그만 출력.
-		Log.i(LOGTAG, " showInterstitial() ");
-
 
 	}
 
@@ -96,6 +93,10 @@ public class CustomEventAdamInterstitial implements CustomEventInterstitial,
 	public void OnAdFailed(AdError error, String errorMessage) {
 
 		// AdMob custom event에 전면광고가 실패했음을 알려 다음 mediation network를 호출하도록 함.
+		// 하지만 이 예제에서는 AdFit 광고 네크워크가 선택됨과 동시에 광고를 받았다고 설정해 둠.
+		// 따라서 showInterstitial 호출시 광고를 로드하가 실패를 하더라도 다음 mediation network로 가지지 않음.
+		// 그렇기에 AdFit network를 mediation의 우선순위를 최하위로 설정해 두어야 함.
+
 		// Adam의 경우 5분 이내 전면광고 재호출(requestAndPresent)이 발생한 경우, 실패로 간주하고
 		// 광고를 노출하지 않으므로 fail error가 발생함.
 		interstitialListener.onFailedToReceiveAd();
